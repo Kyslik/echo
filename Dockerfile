@@ -6,4 +6,4 @@ WORKDIR /usr/local/bin
 
 COPY echo.py .
 
-CMD ["echo.py"]
+CMD python echo.py

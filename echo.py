@@ -20,7 +20,7 @@ class RequestHandler(BaseHTTPRequestHandler):
 
 def main(port):
     print('Listening on localhost:%s' % port)
-    server = HTTPServer(('localhost', port), RequestHandler)
+    server = HTTPServer(('', port), RequestHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
