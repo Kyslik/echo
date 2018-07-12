@@ -20,5 +20,5 @@ docker run -it --rm kyslik/echo python echo.py -p 1234
 or 
 
 ```shell
-docker run -it --rm -d -p 1234:1234 kyslik/echo python echo.py -p 1234
+docker run -it --rm -d -p 1234:1234 kyslik/echo python -u echo.py -p 1234
 ```

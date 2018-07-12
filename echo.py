@@ -26,7 +26,6 @@ def main(port):
     except KeyboardInterrupt:
         pass
     finally:
-        # Clean-up server (close socket, etc.)
         server.server_close()
 
 
@@ -40,3 +39,4 @@ if __name__ == "__main__":
     (options, args) = parser.parse_args()
 
     main(options.port)
+
